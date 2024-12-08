@@ -1,0 +1,56 @@
+name: multi_tenant_app
+description: A multi-tenant Flutter application with dynamic resource allocation.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # For localization if needed
+    sdk: flutter
+
+  # State management (choose one: Provider, Riverpod, or Bloc)
+  provider: ^6.1.3
+  #flutter_riverpod: ^2.3.0 # Optional if you choose Riverpod instead
+  #flutter_bloc: ^8.1.2     # Optional if you choose Bloc instead
+
+  # Forms
+  flutter_form_builder: ^8.1.1
+  #reactive_forms: ^15.1.0 # Optional alternative for form handling
+
+  # HTTP and API handling
+  http: ^1.0.0
+
+  # SQLite database
+  sqflite: ^2.0.3
+  path_provider: ^2.0.11
+
+  # JSON handling
+  json_annotation: ^4.8.1
+
+  # Authentication
+  firebase_auth: ^4.5.1 # Optional if using Firebase
+  google_sign_in: ^6.2.0 # Optional for Google authentication
+
+  # App Theming
+  google_fonts: ^4.0.4
+
+  # Lazy loading resources
+  cached_network_image: ^3.2.3
+
+  # Navigation and routing
+  go_router: ^6.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.3.3
+  json_serializable: ^6.8.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
